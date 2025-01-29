@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Welcome10Element"
+    },
+    "definitions": {
+        "Welcome10Element": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "gender": {
+                    "$ref": "#/definitions/Gender"
+                },
+                "status": {
+                    "$ref": "#/definitions/Status"
+                }
+            },
+            "required": [
+                "email",
+                "gender",
+                "id",
+                "name",
+                "status"
+            ],
+            "title": "Welcome10Element"
+        },
+        "Gender": {
+            "type": "string",
+            "enum": [
+                "female",
+                "male"
+            ],
+            "title": "Gender"
+        },
+        "Status": {
+            "type": "string",
+            "enum": [
+                "active",
+                "inactive"
+            ],
+            "title": "Status"
+        }
+    }
+}
