@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.qa.gorest.base.BaseTest;
 import com.qa.gorest.client.RestClient;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+
 public class APISchemaValidationTest extends BaseTest {
 
 	@BeforeMethod

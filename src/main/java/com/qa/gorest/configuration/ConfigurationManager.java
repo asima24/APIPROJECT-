@@ -17,6 +17,7 @@ public class ConfigurationManager {
 	
 		prop=new Properties();
 		try {
+			
 			fis=new FileInputStream("./src/test/resources/config/config.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException e) {

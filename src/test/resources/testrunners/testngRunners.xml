@@ -7,8 +7,14 @@
     </listener>
     </listeners>
     
-    
-      <test name="Go Rest CreateUserTest">
+      <test name="Go Rest GetUserSchemaValidationTest">
+		<parameter name="baseURI" value="https://gorest.co.in" />
+
+		<classes>
+			<class name="com.qa.gorest.tests.APISchemaValidationTest" />
+		</classes>
+	</test>
+     <!--   <test name="Go Rest CreateUserTest">
 		<parameter name="baseURI" value="https://gorest.co.in" />
 
 		<classes>
@@ -22,7 +28,7 @@
 			<class name="com.qa.gorest.tests.CircuitTest" />
 		</classes>
 	</test>
-   <!--   <test name="Amadeus Flight API Test">
+    <test name="Amadeus Flight API Test">
 		<parameter name="baseURI" value="https://test.api.amadeus.com" />
 		<parameter name="grantType" value="client_credentials" />
 		<parameter name="clientId" value="TAnRnsU5lASXZ8mPGdwRQZMoQzhu6Gwv" />
